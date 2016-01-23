@@ -1,0 +1,4 @@
+public void SaludarOnClick(View v) {
+        EditText CajaTexto = (EditText) findViewById(R.id.ht_ejemplo_nombre);
+        String nombre = CajaTexto.getText().toString();
+        Toast.makeText(this, " Hola" + nombre, Toast.LENGTH_LONG).show();
