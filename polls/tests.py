@@ -2,7 +2,7 @@ import datetime
 from django.utils import timezone
 from django.test import TestCase
 from .models import Question
-from django.urls import reverse
+from django.core.urlresolvers import reverse
 
 class QuestionMethodTests(TestCase):
 
@@ -96,5 +96,5 @@ class QuestionIndexDetailTests(TestCase):
                                    args=(past_question.id,)))
         self.assertContains(response, past_question.question_text,
                             status_code=200)
-        
+
 # Create your tests here.
